@@ -10,3 +10,4 @@ class BaseCase:
     def get_headers(self, response: Response, header_name):
         assert header_name in response.headers, f"Wrong header name. Expected: {header_name}"
         return response.headers[header_name]
+
